@@ -25,29 +25,24 @@ selector {property: value;}
 内联定义即是在对象的标记内使用对象的 style 属性定义适用其的样式表属性。
 示例代码：
 
-	```HTML
 	<p style="color:#f00">这一行的字体颜色将显示为红色</p>
-	```
 
 #### 内部样式块对象 Embedding a Style Block
 
 你可以在你的 HTML 文档的`<head>`标记里插入一个`<style>`块对象。
 示例代码：
 
-	```HTML
 	<style>
 	    .test2 {
 	        color: #000;
 	    }
 	</style>
-	```
 
 #### 外部样式表 Linking to a Style Sheet
 
 你可以先建立外部样式表文件`*.css`，然后使用 HTML 的 link 对象。或者使用 `@import` 来引入。
 示例代码：
 
-	```HTML
 	<!-- Use link elements -->
 	<link rel="stylesheet" href="core.css">
 	
@@ -55,7 +50,6 @@ selector {property: value;}
 	<style>
 	  @import url("more.css");
 	</style>
-	```
 
 **注意**：在实际开发中，推荐使用 HTML 的 link 对象来引入。详细内容可以参见<http://www.waylau.com/css-code-guide/#css-miscellaneous>
 
@@ -67,7 +61,6 @@ selector {property: value;}
 
 !important 作用是提高指定 CSS 样式规则的应用优先权。
 
-	```HTML
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -107,7 +100,7 @@ selector {property: value;}
 	<div class="test3">没有被覆盖</div>
 	</body>
 	</html>
-	```
+
 
 ![](../images/important.jpg)
 
