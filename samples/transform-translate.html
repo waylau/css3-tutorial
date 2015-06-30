@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2D translate | www.waylau.com</title>
+    <meta name="description" content="2D translate">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+        div {
+            width: 100px;
+            height: 75px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .translate {
+            transform: translate(50px, 100px);
+            -ms-transform: translate(50px, 100px); /* IE 9 */
+            -webkit-transform: translate(50px, 100px); /* Safari and Chrome */
+        }
+
+        .rotate
+        {
+            transform:rotate(30deg);
+            -ms-transform:rotate(30deg); /* IE 9 */
+            -webkit-transform:rotate(30deg); /* Safari and Chrome */
+        }
+
+        .scale
+        {
+            transform: scale(2,4);
+            -ms-transform: scale(2,4); /* IE 9 */
+            -webkit-transform: scale(2,4); /* Safari and Chrome */
+        }
+
+        .skew
+        {
+            transform:skew(30deg,20deg);
+            -ms-transform:skew(30deg,20deg); /* IE 9 */
+            -webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
+        }
+    </style>
+</head>
+<body>
+
+<div>This is a DIV element.</div>
+
+<div class="translate">This is a translate DIV element.</div>
+
+<div class="rotate">Hello. This is a rotate DIV element.</div>
+
+<div class="scale">Hello. This is a scale DIV element.</div>
+
+<div class="skew">Hello. This is a skew DIV element.</div>
+</body>
+</html>

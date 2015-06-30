@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>边框 | www.waylau.com</title>
+    <meta name="description" content="边框">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+        .border-radius {
+            border: 2px solid;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            background: #6AAFCF;
+            border-radius: 25px;
+            -moz-border-radius: 25px; /* For Firefox Browser */
+            -webkit-border-radius: 25px; /* For Safari and Google Chrome Browser */
+            -o-border-radius: 25px /* For Opera Browser */
+        }
+
+        .box-shadow {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            background: #6AAFCF;
+            -moz-box-shadow: 15px 15px 5px #888245; /* For Firefox/Mozilla */
+            -webkit-box-shadow: 15px 15px 5px #888245; /* For Google Chrome and Safari */
+            -o-box-shadow: 15px 15px 5px #888245; /* For Opera */
+            box-shadow: 15px 15px 5px #888245;
+        }
+
+        .border-image {
+            border-width: 15px;
+            -moz-border-image: url(/images/border.png) 30 30 round; /* Firefox */
+            -webkit-border-image: url(/images/border.png) 30 30 round; /* Safari and Chrome */
+            -o-border-image: url(/images/border.png) 30 30 round; /* Opera */
+            border-image: url(/images/border.png) 30 30 round;
+        }
+
+    </style>
+
+<body>
+
+<div class="border-radius">
+    With the help of border-radius properties, we can make the rounded corners border.
+</div>
+
+<div class="box-shadow">
+    With the help of box-shadow properties, we can create the shadow for a box.
+</div>
+
+<div class="border-image">
+    You can see the customized border. This could be either *.png or *.jpg format.
+</div>
+
+</body>
+</html>

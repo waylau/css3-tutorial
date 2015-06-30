@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>背景 background-origin | www.waylau.com</title>
+    <meta name="description" content="背景 background-origin ">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+
+        .background-origin-border {
+            width: 250px;
+            height: 250px;
+            border: 1px dotted green;
+            padding: 25px;
+            background-image: url('images/border.png');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: border-box;
+        }
+
+        .background-origin-content {
+            width: 250px;
+            height: 250px;
+            border: 1px dotted green;
+            padding: 25px;
+            background-image: url('images/border.png');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: content-box;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="background-origin-border">
+    Welcom to waylau.com.
+</div>
+
+<div class="background-origin-content">
+    Welcom to waylau.com.
+</div>
+
+</body>
+</html>
