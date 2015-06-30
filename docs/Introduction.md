@@ -10,7 +10,7 @@ CSS3 已完全向后兼容，所以你就不必改变现有的设计。
 
 ## 语法
 
-Selector {property:value}
+selector {property:value}
 
 ![](../images/selector.jpg)
 
