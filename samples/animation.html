@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>动画 | www.waylau.com</title>
+    <meta name="description" content="动画">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+        #animated_div {
+            text-align: center;
+            width: 60px;
+            height: 40px;
+            background: #6699FF;
+            color: #ffffff;
+            position: relative;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            animation: animated_div 5s infinite;
+            -moz-animation: animated_div 5s infinite;
+            -webkit-animation: animated_div 5s infinite;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+
+        @keyframes animated_div {
+            0% {
+                left: 0px;
+            }
+            20% {
+                left: 50px;
+                background-color: green;
+            }
+            40% {
+                left: 140px;
+                background-color: red;
+            }
+            60% {
+                left: 280px;
+                background-color: yellow;
+            }
+            80% {
+                left: 425px;
+                background-color: blue;
+            }
+            100% {
+                left: 0px;
+                background-color: pink;
+            }
+        }
+
+        @-webkit-keyframes animated_div {
+            0% {
+                left: 0px;
+            }
+            20% {
+                left: 50px;
+                background-color: green;
+                margin-top: 50px;
+            }
+            40% {
+                left: 140px;
+                background-color: red;
+                margin-top: 0px;
+            }
+            60% {
+                left: 280px;
+                background-color: yellow;
+                margin-top: 50px;
+            }
+            80% {
+                left: 425px;
+                background-color: blue;
+                margin-top: 0px;
+            }
+            100% {
+                left: 0px;
+                background-color: pink;
+            }
+        }
+
+        @-moz-keyframes animated_div {
+            0% {
+                left: 0px;
+            }
+            20% {
+                left: 50px;
+                background-color: green;
+            }
+            40% {
+                left: 140px;
+                background-color: red;
+            }
+            60% {
+                left: 280px;
+                background-color: yellow;
+            }
+            80% {
+                left: 425px;
+                background-color: blue;
+            }
+            100% {
+                left: 0px;
+                background-color: pink;
+            }
+        }
+    </style>
+
+<body>
+
+<div id="animated_div">
+    CSS3
+    <span style="font-size:10px;">Tutorial</span>
+</div>
+
+</body>
+</html>

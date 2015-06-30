@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>选择器权重 | www.waylau.com</title>
+    <meta name="description" content="选择器权重">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style type="text/css">
+        #redP p {
+            /* 权值 = 100+1=101 */
+            color: #F00; /* 红色 */
+        }
+
+        #redP .red em {
+            /* 权值 = 100+10+1=111 */
+            color: #00F; /* 蓝色 */
+
+        }
+
+        #redP p span em {
+            /* 权值 = 100+1+1+1=103 */
+            color: #FF0; /*黄色*/
+        }
+    </style>
+</head>
+<body>
+<div id="redP">
+    <p class="red">red
+        <span><em>em red</em></span>
+    </p>
+
+    <p>red</p>
+</div>
+</body>
+</html>
