@@ -10,7 +10,7 @@ CSS3 已完全向后兼容，所以你就不必改变现有的设计。
 
 ## 语法
 
-selector {property:value}
+selector {property: value;}
 
 ![](../images/selector.jpg)
 
@@ -25,7 +25,7 @@ selector {property:value}
 内联定义即是在对象的标记内使用对象的 style 属性定义适用其的样式表属性。
 示例代码：
 
-	```html
+	```HTML
 	<p style="color:#f00">这一行的字体颜色将显示为红色</p>
 	```
 
@@ -34,7 +34,7 @@ selector {property:value}
 你可以在你的 HTML 文档的`<head>`标记里插入一个`<style>`块对象。
 示例代码：
 
-	```html
+	```HTML
 	<style>
 	    .test2 {
 	        color: #000;
@@ -47,7 +47,7 @@ selector {property:value}
 你可以先建立外部样式表文件`*.css`，然后使用 HTML 的 link 对象。或者使用 `@import` 来引入。
 示例代码：
 
-	```html
+	```HTML
 	<!-- Use link elements -->
 	<link rel="stylesheet" href="core.css">
 	
@@ -67,7 +67,7 @@ selector {property:value}
 
 !important 作用是提高指定 CSS 样式规则的应用优先权。
 
-	```html
+	```HTML
 	<!DOCTYPE html>
 	<html>
 	<head>
