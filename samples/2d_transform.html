@@ -10,6 +10,7 @@
 
     <style>
         div {
+            float:left;
             width: 100px;
             height: 75px;
             background-color: red;
@@ -42,6 +43,13 @@
             -ms-transform:skew(30deg,20deg); /* IE 9 */
             -webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
         }
+
+        .matrix
+        {
+            transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+            -ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+            -webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+        }
     </style>
 </head>
 <body>
@@ -55,5 +63,7 @@
 <div class="scale">Hello. This is a scale DIV element.</div>
 
 <div class="skew">Hello. This is a skew DIV element.</div>
+
+<div class="matrix">Hello. This is a matrix DIV element.</div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 ====
 
 CSS3 转换
-CSS3转换，我们可以移动，比例化，反过来，旋转，和拉伸元素。
+CSS3转换，我们可以斜拉(skew)，缩放(scale)，旋转(rotate)以及位移(translate)元素。
 
 
 
@@ -21,22 +21,67 @@ Internet Explorer 9 要求前缀 -ms- 版本.
 
 translate()方法，根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动
 
-
+    .translate {
+        transform: translate(50px, 100px);
+        -ms-transform: translate(50px, 100px); /* IE 9 */
+        -webkit-transform: translate(50px, 100px); /* Safari and Chrome */
+    }
+    
 ## rotate()
 
-rotate()方法，在一个给定度数顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转。
+rotate()方法，在一个给定度数沿着元素中心顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转。
 
+    .rotate
+    {
+        transform:rotate(30deg);
+        -ms-transform:rotate(30deg); /* IE 9 */
+        -webkit-transform:rotate(30deg); /* Safari and Chrome */
+    }
+        
 ## scale()
 
 scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数：
 
+    .scale
+    {
+        transform: scale(2,4);
+        -ms-transform: scale(2,4); /* IE 9 */
+        -webkit-transform: scale(2,4); /* Safari and Chrome */
+    }
+    
 ## skew()
 
 skew()方法，该元素会根据横向（X轴）和垂直（Y轴）线参数给定角度：
 
+    .skew
+    {
+        transform:skew(30deg,20deg);
+        -ms-transform:skew(30deg,20deg); /* IE 9 */
+        -webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
+    }
+    
+skewX(30deg) 如下图：
+
+![](../images/skewx.jpg)
+
+skewY(10deg) 如下图：
+
+![](../images/skewy.jpg)
+
+skew(30deg, 10deg) 如下图：
+        
+![](../images/skew.jpg)
 ## matrix()
 
 matrix()方法和2D变换方法合并成一个。
 
 matrix 方法有六个参数，包含旋转，缩放，移动（平移）和倾斜功能。
 
+    .matrix
+    {
+        transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+        -ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+        -webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+    }
+        
+详见<http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/>
