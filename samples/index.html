@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>easyui scaffold 脚手架 | www.waylau.com</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <link id="easyui_theme_id" rel="stylesheet" type="text/css" href="bower_components/jquery.easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery.easyui/themes/icon.css">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body class="easyui-layout">
+
+  <!--顶部区域-->
+  <div class="top-layout" data-options="region:'north',border:false" >
+
+      <div class="top-left">
+
+          <a href="/">
+              <img class="logo" src="images/logo.png" alt="logo" />
+          </a>
+
+          <a href="/" class="easyui-linkbutton" data-options="plain:true"><h1 class="logo-text"> Easyui Scaffold</h1></a>
+      </div>
+
+      <div class="top-right">
+          <div class="top-menu">
+              <a id="person_detail_id" class="easyui-menubutton" plain="true" menu="#person_menu_id"> waylau</a>
+              <a id="msg_id" href="javascript:void(0);" class="easyui-linkbutton" plain="true"
+                 onclick="javascript:addTabContent('消息','app/msg/index.html' );return false;"> 消息</a>
+              <a id="theme_id" href="javascript:void(0);" class="easyui-linkbutton" plain="true"> 换肤</a>
+              <a href="javascript:void(0);" class="easyui-linkbutton" target="_blank" plain="true"
+                 onclick="javascript:addTabHref('帮助', 'app/help/index.html');return false;">帮助</a>
+          </div>
+
+      </div>
+
+
+      <div id="person_menu_id" style="width:90px;">
+          <div onclick="javascript:addTabHref('个人设置','app/personal/index.html' );return false;"> 个人设置</div>
+          <div onclick="javascript:logout();return false;">退出</div>
+      </div>
+
+  </div>
+
+  <!--左侧导航-->
+  <div class="left-layout" data-options="region:'west',split:false,title:'菜单'" >
+      <div id="left_menu_content_id" class="easyui-accordion" border="true"   fit="false"  >
+      </div>
+
+  </div>
+
+  <!--主内容区-->
+  <div data-options="region:'center'" border="true">
+      <div id="tabs" class="easyui-tabs" fit="true" border="false">
+      </div>
+
+  </div>
+
+  <!--底部信息-->
+  <div class="buttom-layout" data-options="region:'south',border:false" >
+      <div class="buttom-left">
+          版权所有：<a href="javascript:void(0);" class="easyui-linkbutton" target="_blank" plain="true"
+                  onclick="javascript:window.open( 'http://www.waylau.com');return false;"> www.waylau.com</a>&nbsp &nbsp
+          &nbsp
+          version <a href="javascript:void(0);" class="easyui-linkbutton" target="_blank" plain="true"
+                     onclick="javascript:window.open( 'https://github.com/waylau/easyui-scaffold');return false;"> 0.9.2 </a>&nbsp &nbsp
+      </div>
+
+      <div class="buttom-right">
+          <div id="dateime_id"></div>
+      </div>
+
+  </div>
+
+  <div id="tab_memu_id" class="easyui-menu" style="width:150px;">
+      <div id="mm-tabupdate">刷新</div>
+      <div class="menu-sep"></div>
+      <div id="mm-tabclose">关闭窗口</div>
+      <div id="mm-tabcloseall">全部关闭</div>
+      <div id="mm-tabcloseother">关闭其他窗口</div>
+      <div class="menu-sep"></div>
+      <div id="mm-tabcloseleft">关闭左侧窗口</div>
+      <div id="mm-tabcloseright">关闭右侧窗口</div>
+  </div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery.easyui/jquery.easyui.min.js"></script>
+    <script src="bower_components/jquery-cookie/jquery.cookie.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    -->
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/date-util.js"></script>
+        <script src="scripts/easyui-theme-change.js"></script>
+        <script src="scripts/jquery-loading.js"></script>
+        <script src="scripts/msg.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

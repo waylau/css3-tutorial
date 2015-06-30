@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>!important 用法 | www.waylau.com</title>
+    <meta name="description" content="!important 用法">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+        .test {
+            color: #f00 !important;
+            color: #000;
+        }
+
+        .test2 {
+            color: #f00 !important;
+        }
+
+        .test2 {
+            color: #000;
+        }
+
+        .test3 {
+            color: #000;
+        }
+
+        .test3 {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+<div class="test">同一条样式内，!important 优先级高</div>
+<div class="test2">在分散的样式条目内，!important 优先级高</div>
+<div class="test3">没有被覆盖</div>
+</body>
+</html>
