@@ -83,5 +83,11 @@ matrix 方法有六个参数，包含旋转，缩放，移动（平移）和倾�
         -ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
         -webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
     }
-        
-详见<http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/>
+
+## 源码
+
+本文中所用例子源码参见
+<https://github.com/waylau/css3-tutorial> 中 `samples` 目录下的 2d_transform.html
+
+## 参考
+* <http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/>

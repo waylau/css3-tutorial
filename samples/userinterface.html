@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UI | www.waylau.com</title>
+    <meta name="description" content="UI">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+
+        .div-both {
+            border: 1px solid green;
+            margin-top: 20px;
+            padding: 15px 30px;
+            width: 250px;
+            resize: both;
+            overflow: auto;
+        }
+
+        .div-horizontal {
+            border: 1px solid green;
+            margin-top: 20px;
+            padding: 15px 30px;
+            width: 250px;
+            resize: horizontal;
+            overflow: auto;
+        }
+
+        .div-vertical {
+            border: 1px solid green;
+            margin-top: 20px;
+            padding: 15px 30px;
+            width: 250px;
+            resize: vertical;
+            overflow: auto;
+        }
+
+        .box-sizing {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box; /* Firefox */
+            width: 50%;
+            border: 1em solid red;
+            float: left;
+        }
+
+        .outline-offset {
+            width: 180px;
+            height: 80px;
+            border: 1px solid red;
+            outline: 1px solid green;
+            outline-offset: 20px;
+        }
+
+        .round-outline-offset {
+            width: 180px;
+            height: 80px;
+            border: 1px solid red;
+            outline: 1px solid green;
+            outline-offset: 20px;
+            border-radius: 15px; /* W3C syntax */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>resize 属性：</h1>
+
+<div class="div-both">This div is stretchable from both corner (Horizontal & Vertical).</div>
+<div class="div-horizontal">This div is stretchable from horizontal corner.</div>
+<div class="div-vertical">This div is stretchable from vertical corner.</div>
+
+<h1>box-sizing 属性：</h1>
+
+<div class="container">
+    <div class="box">This div occupies the left half.</div>
+    <div class="box-sizing">This div occupies the right half.</div>
+</div>
+
+<h1>outline-offset 属性：</h1>
+
+<div class="outline-offset">
+    This div is containing the outline offset of 20 px.
+</div>
+
+<div class="round-outline-offset">
+    This div is containing the outline offset of 20 px.
+</div>
+
+</body>
+</html>

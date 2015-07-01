@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>过渡效果 | www.waylau.com</title>
+    <meta name="description" content="过渡效果">
+    <meta name="author" content="Way Lau, www.waylau.com"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style>
+        .example {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+            /* Safari */
+            -webkit-transition-property: width;
+            -webkit-transition-duration: 1s;
+            -webkit-transition-timing-function: linear;
+            -webkit-transition-delay: 2s;
+        }
+
+        .example:hover {
+            width: 200px;
+        }
+
+        #example {
+            position: relative;
+            width: 530px;
+            height: 530px;
+            margin: 0 auto 10px;
+            padding: 10px;
+        }
+
+        .childbox {
+            font-size: 12px;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            background-color: #ccc;
+        }
+
+        .childbox p {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #ease.childbox {
+            -webkit-transition: all 4s ease;
+            -moz-transition: all 4s ease;
+            -o-transition: all 4s ease;
+            transition: all 4s ease;
+            border: 1px solid #ff0000;
+        }
+
+        #ease_in.childbox {
+            -webkit-transition: all 4s ease-in;
+            -moz-transition: all 4s ease-in;
+            -o-transition: all 4s ease-in;
+            transition: all 4s ease-in;
+            border: 1px solid #00ffff;
+        }
+
+        #ease_out.childbox {
+            -webkit-transition: all 4s ease-out;
+            -moz-transition: all 4s ease-out;
+            -o-transition: all 4s ease-out;
+            transition: all 4s ease-out;
+            border: 1px solid #f5f5f5;
+        }
+
+        #ease_in_out.childbox {
+            -webkit-transition: all 4s ease-in-out;
+            -moz-transition: all 4s ease-in-out;
+            -o-transition: all 4s ease-in-out;
+            transition: all 4s ease-in-out;
+            border: 1px solid #f209f3;
+        }
+
+        #linear.childbox {
+            -webkit-transition: all 4s linear;
+            -moz-transition: all 4s linear;
+            -o-transition: all 4s linear;
+            transition: all 4s linear;
+            border: 1px solid #ddddff;
+        }
+
+        #custom.childbox {
+            -webkit-transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+            -moz-transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+            -o-transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+            transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+            border: 1px solid #cfdf44;
+        }
+
+        #negative.childbox {
+            -webkit-transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+            -moz-transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+            -o-transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+            transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+            border: 1px solid #000;
+        }
+
+        #example:hover .childbox, #example.hover_effect .childbox {
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            -webkit-transform: rotate(720deg);
+            -moz-transform: rotate(720deg);
+            -o-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+            transform: rotate(720deg);
+            margin-left: 420px;
+            background-color: #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+<p>鼠标移动到 div 元素上，查看过渡效果。</p>
+
+<p><b>注意：</b> 过渡效果需要等待两秒后才开始。</p>
+
+<div class="example"></div>
+
+<p>Hover on object to see it in action</p>
+
+<div id="example">
+    <div id="ease" class="childbox"><p>CSS3</p></div>
+    <div id="ease_in" class="childbox"><p>CSS3</p></div>
+    <div id="ease_out" class="childbox"><p>CSS3</p></div>
+    <div id="ease_in_out" class="childbox"><p>CSS3</p></div>
+    <div id="linear" class="childbox"><p>CSS3</p></div>
+    <div id="custom" class="childbox"><p>CSS3</p></div>
+    <div id="negative" class="childbox"><p>CSS3</p></div>
+</div>
+
+</body>
+</html>

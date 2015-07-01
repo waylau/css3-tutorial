@@ -10,6 +10,6 @@ This is the summary of my book.
 * [多列](docs/Multiple Columns.md)
 * [UI](docs/User Interface.md)
 * [过渡效果](docs/Transitions Effect.md)
-* [文本特效](docs/Text Effect.md)
+* [文本效果](docs/Text Effect.md)
 * [2D](docs/2D Transform.md)
 * [3D](docs/3D Transform.md)
