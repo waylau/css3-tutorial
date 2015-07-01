@@ -35,6 +35,7 @@ Chrome 和 Safari 需要前缀 -webkit-。
 * 0% 是动画的开始，100% 是动画的完成。
 * 为了得到最佳的浏览器支持，您应该始终定义 0% 和 100% 选择器。
 
+例子：
 
 	@keyframes animated_div {
 		0% {
