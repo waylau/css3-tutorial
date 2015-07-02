@@ -61,4 +61,4 @@ content-box, padding-box,和 border-box 区域内可以放置背景图像。
 ## 源码
 
 本文中所用例子源码参见
-<https://github.com/waylau/css3-tutorial> 中 `samples` 目录下的 border.html
+<https://github.com/waylau/css3-tutorial> 中 `samples` 目录下的 background_size.html、background_origin.html
