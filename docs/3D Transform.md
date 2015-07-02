@@ -58,6 +58,8 @@ otate3d(x,y,z,a)中取值说明：
 * rotateY(a)函数功能等同于rotate3d(0,1,0,a)
 * rotateZ(a)函数功能等同于rotate3d(0,0,1,a)
 
+例子
+
     .rotate-3d {
         transform: rotate3d(0,0.6,0.2,60deg);
         -webkit-transform: rotate3d(0.6,0.6,0.2,60deg); /* Safari and Chrome */

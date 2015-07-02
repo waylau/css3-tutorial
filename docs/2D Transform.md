@@ -1,8 +1,7 @@
 2D 转换
 ====
 
-CSS3 转换
-CSS3转换，我们可以斜拉(skew)，缩放(scale)，旋转(rotate)以及位移(translate)元素。
+CSS3 2D转换，我们可以斜拉(skew)，缩放(scale)，旋转(rotate)以及位移(translate)元素。
 
 
 
