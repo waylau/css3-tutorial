@@ -106,6 +106,22 @@
             border: 1px solid #000;
         }
 
+        #steps-start.childbox {
+            -webkit-transition: all 4s steps(4, start);
+            -moz-transition: all 4s steps(4, start);
+            -o-transition: all 4s steps(4, start);
+            transition: all 4s steps(4, start);
+            border: 1px solid #ff0;
+        }
+
+        #steps-end.childbox {
+            -webkit-transition: all 4s steps(4, end);
+            -moz-transition: all 4s steps(4, end);
+            -o-transition: all 4s steps(4, end);
+            transition: all 4s steps(4, end);
+            border: 1px solid #0f0;
+        }
+
         #example:hover .childbox, #example.hover_effect .childbox {
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
@@ -139,6 +155,8 @@
     <div id="linear" class="childbox"><p>CSS3</p></div>
     <div id="custom" class="childbox"><p>CSS3</p></div>
     <div id="negative" class="childbox"><p>CSS3</p></div>
+    <div id="steps-start" class="childbox"><p>CSS3</p></div>
+    <div id="steps-end" class="childbox"><p>CSS3</p></div>
 </div>
 
 </body>
