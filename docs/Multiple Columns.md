@@ -6,8 +6,8 @@ CSS3 多列再需要设计多个布局时是非常有用的。比如，报纸布
 主要属性如下：
 
 * column-count ： 指定元素的列数
-* column-rule ： 指定的列之间的差距
-* column-gap ： 设置列之间的宽度，样式和颜色
+* column-rule ： 设置列之间的宽度，样式和颜色
+* column-gap ： 指定的列之间的差距
 
 例子：
 
